@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Detalles de la Materia</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label floating>Nombre</ion-label>
+            <ion-input type="nombre" [(ngModel)] = "datos.vc_Nombre" disabled></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Descripcion</ion-label>
+            <ion-input type="descripcion" [(ngModel)] = "datos.vc_Descripcion" disabled></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Jornada</ion-label>
+            <ion-input type="jornada" [(ngModel)] = "datos.vc_Jornada" disabled></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Fecha de inicio</ion-label>
+            <ion-input type="fechaInicio" [(ngModel)] = "datos.dt_FechaInicio" disabled></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Fecha fin</ion-label>
+            <ion-input type="fechaFin" [(ngModel)] = "datos.dt_Fechafin" disabled></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Fecha del parcial</ion-label>
+            <ion-input type="fechaParcial" [(ngModel)] = "datos.dt_FechaParcial" disabled></ion-input>
+        </ion-item>
+        <ion-item>
+            <button ion-button full style="padding: 18px 0px;" (click)="estudiantes()">Ver estudiantes</button>
+            <button ion-button full style="padding: 18px 0px;" (click)="addNovedades()">Registrar Novedades</button>
+            <button ion-button full style="padding: 18px 0px;" (click)="viewNovedades()">Ver Novedades</button>
+        </ion-item>
+    </ion-list>
+</ion-content>

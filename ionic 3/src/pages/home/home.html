@@ -1,0 +1,14 @@
+<ion-content padding center text-center>
+  <ion-title>Proyecto Ionic</ion-title>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Username" [(ngModel)]="datos.txtUserName"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Password" type="password" [(ngModel)]="datos.txtPassword"></ion-input>
+    </ion-item>
+    <ion-item text-center>
+      <button ion-button full style="padding: 18px 0px;" (click)="login()">Iniciar sesion</button>
+    </ion-item>
+  </ion-list>
+</ion-content>

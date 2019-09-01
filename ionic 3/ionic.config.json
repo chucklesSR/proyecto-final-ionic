@@ -1,0 +1,12 @@
+{
+  "name": "ProyectoFinal",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [{
+    "path": "/api",
+    "proxyUrl": "http://192.168.0.18:80/proyectoIonic/"
+  }]
+}

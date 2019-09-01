@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Aplicacion Docente</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item wrap *ngFor="let a of datos; let index = index" (click)="detail(a)">
+      <ion-label col-25>{{ a.vc_Nombre }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Añadir Novedades</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Descripcion" [(ngModel)]="datos.vc_Descripcion"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Foto" [(ngModel)]="datos.vc_Foto"></ion-input>
+    </ion-item>
+    <ion-item text-center>
+      <button ion-button full style="padding: 18px 0px;" (click)="add()">Añadir</button>
+      <button ion-button full style="padding: 18px 0px;" (click)="getPicture()">Toma una foto</button>
+      <img [src]="image" *ngIf="image" />
+    </ion-item>
+  </ion-list>
+</ion-content>
